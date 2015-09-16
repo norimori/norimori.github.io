@@ -14,7 +14,7 @@ app.controller('MainCtrl', [
 		//$scope variable defines a string
 		$scope.testYAY = 'Hello world! HUH?!';
 
-		//$scope variable defines a list of post titles
+		//$scope variable defines a list array of post titles
 		$scope.posts = [
 			{title: 'post 1', upvotes: 5},
 			{title: 'post 2', upvotes: 2},
@@ -23,6 +23,16 @@ app.controller('MainCtrl', [
 			{title: 'post 5', upvotes: 4}
 		];
 	}
+
+	//Allows users to add posts. 
+	/*Adds function to $scope variable that adds an object into the
+	'posts' array. When this function is called, it appends a new post to
+	the $scope.posts variable. */
+	$scope.addPost = function() {
+		//push appends a variable
+		$scope.posts.push({title: 'A new post!', upvotes: 0});
+	};
+
 ]);
 
 

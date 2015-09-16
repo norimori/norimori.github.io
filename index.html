@@ -13,10 +13,23 @@
 			{{testYAY}} Displaying contents of Angular controller: Two-way data-bindings
 		</div>-->
 
-		<!-- ng-repeat lets you display a list-->
+		<!-- 
+			ng-repeat lets you display a list.
+			'orderBy' is an Angular built-in filter.
+		-->
 		<div ng-repeat="post in posts | orderBy: '-upvotes'">
 			{{post.title}} - upvotes: {{post.upvotes}}
+
+			<!-- Clickable button that executes $scope function's addPost function -->
+			<button ng-click="addPost()">Post</button>
+
+			<!-- Form to allow users to specify title of post -->
+
+			
 		</div>
+
+
+
 
 	</body>
 

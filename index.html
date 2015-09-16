@@ -7,8 +7,11 @@
 	</head>
 
 	<body ng-app="flapperNewsYAY" ng-controller="MainCtrl">
-		<div>
-			{{testHUH}} <!--Displaying contents of Angular controller: Two-way data-bindings-->
+		<!--<div>
+			{{testYAY}} Displaying contents of Angular controller: Two-way data-bindings
+		</div>-->
+		<div ng-repeat="post in posts">
+			{{post}}
 		</div>
 	</body>
 

@@ -2,11 +2,12 @@ var app = angular.module('flapperNewsYAY', []);
 
 //Creating controller
 app.controller('MainCtrl', [
+
 	'$scope', //Initialize $scope variable
 
 	/*
 		$scope variable serves as the bridge between Angular controllers
-		and Angular templates. If soemthing needs to be accessible in the
+		and Angular templates. If something needs to be accessible in the
 		template, like a function/variable, bind it to $scope.
 	*/
 	function($scope) {
@@ -15,11 +16,11 @@ app.controller('MainCtrl', [
 
 		//$scope variable defines a list of post titles
 		$scope.posts = [
-			'post 1',
-			'post 2',
-			'post 3',
-			'post 4',
-			'post 5',
+			{title: 'post 1', upvotes: 5},
+			{title: 'post 2', upvotes: 2},
+			{title: 'post 3', upvotes: 15},
+			{title: 'post 4', upvotes: 9},
+			{title: 'post 5', upvotes: 4}
 		];
 	}
 ]);

@@ -44,9 +44,7 @@ app.controller('MainCtrl', [
 				bound to the $scope variable 'title', and set 'title' to
 				blank once it's been added to the posts array.
 			*/
-			$scope.posts.push({title: 'A new post!', upvotes: 0});
-
-
+			$scope.posts.push({title: $scope.title, upvotes: 0});
 
 			//Resets contents of $scope.title to blank string.
 			$scope.title = '';

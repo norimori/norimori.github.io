@@ -19,13 +19,8 @@
 		-->
 		<div ng-repeat="post in posts | orderBy: '-upvotes'">
 			{{post.title}} - upvotes: {{post.upvotes}}
-
-			<!-- Clickable button that executes $scope function's addPost function -->
-			<button ng-click="addPost()">Post</button>
-
-			<!-- Form to allow users to specify title of post -->
-
 		</div>
+
 
 		<!-- Form that allows users to enter custom posts. 
 			This form encompasses the title text-box and 'Submit Post! button'. This also calls the addPost() function
@@ -36,8 +31,6 @@
 			<input type="text" ng-model="title"></input> <!--Accesses this content using ng-model="title" -->
 			<button type="submit">Submit Post!</button>
 		</form>
-
-
 
 
 	</body>

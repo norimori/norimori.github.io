@@ -14,9 +14,10 @@
 		</div>-->
 
 		<!-- ng-repeat lets you display a list-->
-		<div ng-repeat="post in posts">
-			{{post}}
+		<div ng-repeat="post in posts | orderBy: '-upvotes'">
+			{{post.title}} - upvotes: {{post.upvotes}}
 		</div>
+
 	</body>
 
 </html>

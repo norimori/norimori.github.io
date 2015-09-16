@@ -25,8 +25,17 @@
 
 			<!-- Form to allow users to specify title of post -->
 
-			
 		</div>
+
+		<!-- Form that allows users to enter custom posts. 
+			This form encompasses the title text-box and 'Submit Post! button'. This also calls the addPost() function
+			using the ng-submit directive (The user can press the 'enter' key to submit the form).
+			The ng-model directive binds the contents of the textbox to $scope, which allows the controller to acces the contents of the textbox using $scope.title
+		-->
+		<form ng-submit="addPost()">
+			<input type="text" ng-model="title"></input> <!--Accesses this content using ng-model="title" -->
+			<button type="submit">Submit Post!</button>
+		</form>
 
 
 

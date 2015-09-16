@@ -4,8 +4,8 @@ var app = angular.module('flapperNewsYAY', []);
 app.controller('MainCtrl', [
 	'$scope',
 	function($scope) {
-		$scope.test = 'Hello world! Is this on the next line?'
+		$scope.test = 'Hello world! Please work?';
 	}
-])
+]);
 
 

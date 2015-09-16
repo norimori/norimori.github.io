@@ -50,6 +50,12 @@ app.controller('MainCtrl', [
 			$scope.title = '';
 		};
 
+		//Increment upvote count by 1
+		//@param: current instance of post being incremented
+		$scope.incrementUpvotes = function(post) {
+			post.upvotes += 1;
+		}
+
 
 	}
 

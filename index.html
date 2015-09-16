@@ -14,11 +14,16 @@
 		</div>-->
 
 		<!-- 
-			ng-repeat lets you display a list.
+			ng-repeat lets you display a list. It instantiates a tempate once per item from a collection.
 			'orderBy' is an Angular built-in filter.
+
+			"post in posts" means 'post' from inside the div, and 'posts' is the array from $scope.posts
 		-->
 		<div ng-repeat="post in posts | orderBy: '-upvotes'">
+			<!-- Clickable element that will increment corresponding post's upvote counter. This will call the incrementVotes() function and pass the corresponding 'post' -->
+			<span ng-click="incrementUpvotes(post)">^</span>
 			{{post.title}} - upvotes: {{post.upvotes}}
+
 		</div>
 
 
